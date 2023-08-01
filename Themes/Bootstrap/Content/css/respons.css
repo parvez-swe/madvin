@@ -1,0 +1,305 @@
+﻿@media (max-width: 1199px) {
+  .customProductCol {
+    width: 25%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left; }
+  #back-to-top.show {
+    opacity: 0;
+    display: none; }
+  .dagene .customDagCol {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    border-right: 0;
+    border: none; }
+    .dagene .customDagCol.no-items {
+      display: none; }
+    .dagene .customDagCol.sameHeight {
+      height: auto !important; }
+    .dagene .customDagCol .dag h4 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-top: 20px;
+      text-align: left;
+      display: block;
+      border-top: 1px solid #d4c7b0; }
+      .dagene .customDagCol .dag h4 span {
+        display: inline;
+        opacity: 1;
+        height: auto;
+        margin: 0 5px; }
+  .bottomCart {
+    margin-top: 10px; } }
+
+@media (max-width: 991px) {
+  .customProductCol {
+    width: 33.33333%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left; }
+  .mainNav {
+    height: 50px; }
+    .mainNav ul li.frist {
+      margin: 0;
+      padding-top: 50px;
+      border-bottom: 0;
+      padding: 17px 29px;
+      float: left;
+      top: 0px; }
+  .toggleMobileMenu {
+    display: block; }
+    .toggleMobileMenu .triggerMenu {
+      font-size: 17px;
+      font-weight: 700;
+      font-family: "Khand", Helvetica, Arial, serif;
+      color: #6e6556;
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 18px 0; }
+      .toggleMobileMenu .triggerMenu i {
+        float: right;
+        position: relative;
+        top: -3px; }
+  .menuWrapper {
+    z-index: 201;
+    position: fixed;
+    top: 0;
+    right: -280px;
+    bottom: 0;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    max-width: 280px;
+    background-color: #d4c7b0;
+    -moz-transition: 250ms all ease-in-out;
+    -o-transition: 250ms all ease-in-out;
+    -webkit-transition: 250ms all ease-in-out;
+    transition: 250ms all ease-in-out;
+    overflow-y: visible;
+    overflow-x: hidden;
+    padding-top: 60px; }
+    .menuWrapper.active {
+      right: 0; }
+    .menuWrapper > ul {
+      border-top: 1px solid #c2b08f; }
+      .menuWrapper > ul > li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #c2b08f; }
+        .menuWrapper > ul > li > a {
+          padding: 25px 30px !important;
+          position: relative;
+          color: #40212c;
+          height: 68px; }
+          .menuWrapper > ul > li > a:hover {
+            background-color: transparent;
+            color: #40212c; }
+          .menuWrapper > ul > li > a span.caret {
+            display: block;
+            margin-left: 0;
+            border: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 68px;
+            height: 68px;
+            background-color: #c2b08f; }
+            .menuWrapper > ul > li > a span.caret.turn360:after {
+              -webkit-transform: rotate(180deg);
+              -moz-transform: rotate(180deg);
+              -o-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+            .menuWrapper > ul > li > a span.caret:after {
+              position: absolute;
+              content: '\f107';
+              font-family: FontAwesome;
+              font-size: 20px;
+              color: #40212c;
+              left: 28px;
+              top: 22px;
+              -moz-transition: 200ms all ease-in-out;
+              -o-transition: 200ms all ease-in-out;
+              -webkit-transition: 200ms all ease-in-out;
+              transition: 200ms all ease-in-out; }
+        .menuWrapper > ul > li:hover > ul {
+          display: none !important; }
+        .menuWrapper > ul > li ul.active {
+          display: block !important;
+          max-height: 100%;
+          width: 100%; }
+  .categoryTabMenu {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Khand", Helvetica, Arial, serif;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    width: auto;
+    text-align: right;
+    padding: 15px 20px;
+    background-color: #6e6556;
+    line-height: 90%;
+    margin-top: 30px; }
+    .categoryTabMenu i {
+      margin-left: 10px;
+      position: relative; }
+  .categoryTabs {
+    background-color: #d4c7b0;
+    margin-top: -1px;
+    padding: 0 20px;
+    -moz-transition: 200ms all ease-in-out;
+    -o-transition: 200ms all ease-in-out;
+    -webkit-transition: 200ms all ease-in-out;
+    transition: 200ms all ease-in-out;
+    cursor: pointer; }
+    .categoryTabs.mainCategories {
+      margin-bottom: 0;
+      padding: 0px; }
+    .categoryTabs.subCategories {
+      padding: 0px;
+      margin: 0; }
+    .categoryTabs button {
+      -moz-transition: 350ms all ease-in-out;
+      -o-transition: 350ms all ease-in-out;
+      -webkit-transition: 350ms all ease-in-out;
+      transition: 350ms all ease-in-out;
+      opacity: 0; }
+  .categoryTabHolder {
+    background-color: #d4c7b0;
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 30px; }
+    .categoryTabHolder.active {
+      padding: 20px;
+      max-height: 100%; }
+      .categoryTabHolder.active .categoryTabs button {
+        opacity: 1; }
+  .sideBarCustomer {
+    margin-bottom: 30px; }
+  .top-logo {
+    display: block;
+    text-align: center; }
+  header .accountTabs {
+    float: none;
+    margin-top: 20px;
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .customProductCol {
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left; }
+  .order-details-page {
+    text-align: center; }
+  .topbar .goRight .subtotalKurv {
+    display: none; }
+  .topbar .goRight .openCart {
+    margin-left: 0; }
+  .dagene {
+    padding-top: 30px; }
+  .topic-billede h3 {
+    left: 0;
+    right: auto;
+    bottom: 0;
+    top: auto;
+    font-size: 20px;
+    padding: 20px 30px; }
+  footer {
+    text-align: center; }
+  .topic-page, .contact-page {
+    margin: 30px 0; }
+  .topic-page .page-body, .contact-page .page-body {
+    padding: 30px; }
+  .bottomCart .termsbox .saveCard {
+    float: none; } }
+
+@media (max-width: 540px) {
+  header .accountTabs a.acc-tab.show-xs {
+    display: block;
+    margin-top: 10px; }
+  header .accountTabs a.acc-tab.hide-xs {
+    display: none; }
+  .customProductCol {
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    margin-bottom: 15px; } }
+
+@media (max-width: 480px) {
+  .centerContent {
+    padding: 30px;
+    margin: 30px auto; }
+    .centerContent .forgot-password {
+      float: none;
+      display: block;
+      margin-top: 10px;
+      top: 0; }
+  .categoryTabs.subCategories {
+    margin-top: 20px; }
+  .categoryTabs button {
+    display: block;
+    margin-right: 0;
+    padding: 10px 0px;
+    width: 100%;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important; }
+  .produktItem .navnProdukt {
+    height: auto; }
+  .customProductCol {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    margin-bottom: 15px; }
+  .bottomCart {
+    text-align: center; }
+    .bottomCart .iAlt {
+      display: block; }
+    .bottomCart button.betalNu {
+      display: block;
+      width: 100%;
+      float: none; }
+  .topbar .container {
+    padding: 0; }
+    .topbar .container .datoPickTitel {
+      display: none; } }
+
+@media (max-width: 380px) {
+  .datoPick {
+    padding: 20px; }
+  header .accountTabs a.acc-tab {
+    margin-left: 0;
+    margin-right: 4px;
+    display: inline-block; }
+  header .smiley {
+    margin-left: 0px;
+    position: relative;
+    top: -3px; }
+  .dropdownDato ul {
+    width: 110%; }
+    .dropdownDato ul li a {
+      padding: 5px 20px; } }
+

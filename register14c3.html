@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html class="html-registration-page">
+  <!-- Mirrored from michaelsfirmamad.dk/register?returnurl=%2Fcustomer%2Finfo by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Jul 2023 07:20:54 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <title>Registrer-Michaels Firmamad</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta
+      name="description"
+      content="Har du glemt madpakken? Bestil mad inden kl. 09.00 hos Michaels Firmamad og f&#xE5; leveret samme dag!"
+    />
+    <meta name="keywords" content="" />
+    <meta name="generator" content="nopCommerce" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-53792063-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-53792063-2");
+    </script>
+
+    <link
+      href="Themes/Bootstrap/Content/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="Themes/Bootstrap/Content/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="Themes/Bootstrap/Content/css/style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="Themes/Bootstrap/Content/css/main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="Themes/Bootstrap/Content/css/respons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="Plugins/ExternalAuth.Facebook/Content/facebookstyles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="lib/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+    <!--Powered by nopCommerce - http://www.nopCommerce.com-->
+  </head>
+  <body style="">
+    <div class="ajax-loading-block-window" style="display: none"></div>
+    <div
+      id="dialog-notifications-success"
+      title="Bemærkning"
+      style="display: none"
+    >
+      <span class="fa fa-retweet" aria-hidden="true"></span>
+    </div>
+
+    <div
+      class="modal fade"
+      id="generalModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+      style="display: none"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="dialog-error" title="Fejl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="bar-notification"
+      class="generalNote card card-inverse text-center"
+      style="display: none"
+    >
+      <span class="close" title="Luk"
+        ><span class="fa fa-times" aria-hidden="true"></span
+      ></span>
+    </div>
+
+    <a
+      class="popup-action-form"
+      data-mfp-src="#action_modal"
+      style="display: none"
+    ></a>
+    <div id="action_modal" class="zoom-anim-dialog mfp-hide">
+      <div id="action-body"></div>
+    </div>
+
+    <!--[if lte IE 7]>
+      <div
+        style="
+          clear: both;
+          height: 59px;
+          text-align: center;
+          position: relative;
+        "
+      >
+        <a
+          href="http://www.microsoft.com/windows/internet-explorer/default.aspx"
+          target="_blank"
+        >
+          <img
+            src="/Themes/Bootstrap/Content/images/ie_warning.jpg"
+            height="42"
+            width="820"
+            alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+          />
+        </a>
+      </div>
+    <![endif]-->
+
+    <header>
+      <div class="container">
+        <a class="top-logo" href="index.html">
+          <img
+            title="Michaels Firmamad"
+            alt="Michaels Firmamad"
+            src="images/thumbs/0000076.png"
+          />
+          <span class="sr-only">Logo</span>
+        </a>
+
+        <div class="goRight accountTabs">
+          <a class="acc-tab ico-register" href="register.html"
+            ><span class="fa fa-user-plus"></span><span>Opret bruger</span></a
+          >
+          <a class="acc-tab ico-login" href="login.html"
+            ><span class="fa fa-sign-in"></span><span>Login</span></a
+          >
+          <a
+            class="acc-tab ico-login facebook hide-xs"
+            href="https://www.facebook.com/v2.6/dialog/oauth?client_id=648953841878080&amp;scope=public_profile,email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fmichaelsfirmamad.dk%2Fsignin-facebook&amp;state=CfDJ8NhyWw-F1dxCvOT4X2DMgRJrkI6zr0YoGoXpVvI0OkZwZiOBM51lO07u2wAnBbZlPf3qin0zAMXaUoQqdkmGdB3pgUw35l08vAsQsSMc9MTvz7P09Uct22xfWIFXwK2ZASjaE6JyU6TRJVQa3KdPQEUTVaULLMFYTmAtJp9aPrT0InTGsRDiSc0T_9n4y2F4xD4IvIykx0QNzavnD0QYS_gOE4JqlOjLQ1OCUw6_lEiG1YNO5wxAt7qlPLNaWaQJXg"
+            ><span class="fa fa-facebook"></span
+            ><span>Login med Facebook</span></a
+          >
+          <a
+            class="acc-tab ico-login facebook show-xs"
+            href="https://www.facebook.com/v2.6/dialog/oauth?client_id=648953841878080&amp;scope=public_profile,email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fmichaelsfirmamad.dk%2Fsignin-facebook&amp;state=CfDJ8NhyWw-F1dxCvOT4X2DMgRJrkI6zr0YoGoXpVvI0OkZwZiOBM51lO07u2wAnBbZlPf3qin0zAMXaUoQqdkmGdB3pgUw35l08vAsQsSMc9MTvz7P09Uct22xfWIFXwK2ZASjaE6JyU6TRJVQa3KdPQEUTVaULLMFYTmAtJp9aPrT0InTGsRDiSc0T_9n4y2F4xD4IvIykx0QNzavnD0QYS_gOE4JqlOjLQ1OCUw6_lEiG1YNO5wxAt7qlPLNaWaQJXg"
+            ><span class="fa fa-facebook"></span
+            ><span>Login med Facebook</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <nav class="mainNav">
+      <div class="container">
+        <div class="toggleMobileMenu">
+          <button class="triggerMenu">
+            Menu <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="menuWrapper">
+          <ul class="nav">
+            <li><a class="" href="index.html">Vælg mad</a></li>
+
+            <li><a href="om-firmamad.html">Om Firmamad</a></li>
+            <li><a href="contactus.html">Kontakt os</a></li>
+            <li class="frist">
+              Bestil inden kl. 09.00
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div
+        style="
+          text-align: center;
+          width: 100%;
+          margin: 0 auto;
+          padding: 25px 10px;
+          color: #fff;
+          background: #f33030;
+          font-size: 15px;
+          font-weight: bold;
+        "
+      >
+        Bemærk: Vi holder sommerlukket i uge 29, 30 og 31
+      </div>
+
+      <div class="page registration-page styleForm">
+        <div class="centerContent">
+          <h1>Opret bruger</h1>
+          <form
+            method="post"
+            action="https://michaelsfirmamad.dk/register?returnurl=%2Fcustomer%2Finfo"
+          >
+            <div>
+              <h3>Dine oplysninger</h3>
+              <div class="row">
+                <fieldset class="col-12 col-md-6 form-group">
+                  <legend class="sr-only">Fornavn</legend>
+                  <label class="col-form-label" for="FirstName">Fornavn:</label>
+                  <input
+                    type="text"
+                    data-val="true"
+                    data-val-required="Fornavn er p&#xE5;kr&#xE6;vet."
+                    id="FirstName"
+                    name="FirstName"
+                    value=""
+                  />
+                  <span class="required">*</span>
+                  <span
+                    class="field-validation-valid"
+                    data-valmsg-for="FirstName"
+                    data-valmsg-replace="true"
+                  ></span>
+                </fieldset>
+                <fieldset class="col-12 col-md-6 form-group">
+                  <legend class="sr-only">Efternavn</legend>
+                  <label class="col-form-label" for="LastName"
+                    >Efternavn:</label
+                  >
+                  <input
+                    type="text"
+                    data-val="true"
+                    data-val-required="Efternavn er p&#xE5;kr&#xE6;vet."
+                    id="LastName"
+                    name="LastName"
+                    value=""
+                  />
+                  <span class="required">*</span>
+                  <span
+                    class="field-validation-valid"
+                    data-valmsg-for="LastName"
+                    data-valmsg-replace="true"
+                  ></span>
+                </fieldset>
+
+                <fieldset class="form-group col-12 mail">
+                  <legend class="sr-only">E-mail</legend>
+                  <div>
+                    <label class="col-form-label" for="Email">E-mail:</label>
+                    <input
+                      type="email"
+                      data-val="true"
+                      data-val-email="Forkert e-mail"
+                      data-val-required="E-mail er p&#xE5;kr&#xE6;vet."
+                      id="Email"
+                      name="Email"
+                      value=""
+                    />
+                    <span class="required">*</span>
+                    <span
+                      class="field-validation-valid"
+                      data-valmsg-for="Email"
+                      data-valmsg-replace="true"
+                    ></span>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <div class="d-flex row">
+                  <fieldset class="form-group col-12">
+                    <legend class="sr-only">Telefon</legend>
+                    <label class="col-form-label" for="Phone">Telefon:</label>
+                    <input
+                      type="tel"
+                      data-val="true"
+                      data-val-required="Telefon nr. er p&#xE5;kr&#xE6;vet"
+                      id="Phone"
+                      name="Phone"
+                      value=""
+                    />
+                    <span class="required">*</span>
+                    <span
+                      class="field-validation-valid"
+                      data-valmsg-for="Phone"
+                      data-valmsg-replace="true"
+                    ></span>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <div class="form-group">
+                  <span class="col-form-label">Nyhedsbrev</span>
+                  <label
+                    for="Newsletter"
+                    class="ml-1 custom-control custom-checkbox"
+                  >
+                    <input
+                      checked="checked"
+                      type="checkbox"
+                      class="custom-control-input"
+                      data-val="true"
+                      data-val-required="'Newsletter' must not be empty."
+                      id="Newsletter"
+                      name="Newsletter"
+                      value="true"
+                    />
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">&nbsp;</span>
+                    <span class="sr-only">Nyhedsbrev</span>
+                  </label>
+                  <span
+                    class="field-validation-valid"
+                    data-valmsg-for="Newsletter"
+                    data-valmsg-replace="true"
+                  ></span>
+                </div>
+
+                <div class="col-12 form-group custom-attributes px-0">
+                  <label for="customer_attribute_1" class="col-form-label"
+                    >Virksomhed:</label
+                  >
+                  <select
+                    class="custom-select form-control"
+                    name="customer_attribute_1"
+                    id="customer_attribute_1"
+                  >
+                    <option value="0">---</option>
+                    <option value="39">Jubo (Agerbakken)</option>
+                    <option value="40">Jubo (Industrivej)</option>
+                    <option value="28">Fisker Skanderborg A/S</option>
+                    <option value="2">Smidt &amp; Bohlin</option>
+                    <option value="7">Eglo Danmark A/S</option>
+                    <option value="8">IQ Metal A/S</option>
+                    <option value="11">Red Horse</option>
+                  </select>
+                </div>
+                <div class="col-12 form-group custom-attributes px-0"></div>
+              </div>
+            </div>
+            <div>
+              <h3>Din adgangskode</h3>
+              <div>
+                <div class="form-group col-12">
+                  <div class="row">
+                    <label class="col-form-label" for="Password"
+                      >Adgangskode:</label
+                    >
+                    <input
+                      type="password"
+                      data-val="true"
+                      data-val-length="Adgangskoden skal v&#xE6;re p&#xE5; mindst 6 tegn"
+                      data-val-length-max="999"
+                      data-val-length-min="6"
+                      data-val-required="Adgangskode er p&#xE5;kr&#xE6;vet."
+                      id="Password"
+                      name="Password"
+                    />
+                    <span class="required">*</span>
+                    <span
+                      class="field-validation-valid"
+                      data-valmsg-for="Password"
+                      data-valmsg-replace="true"
+                    ></span>
+                  </div>
+                </div>
+                <div class="form-group col-12">
+                  <div class="row">
+                    <label class="col-form-label" for="ConfirmPassword"
+                      >Bekr&#xE6;ft adgangskode:</label
+                    >
+                    <input
+                      type="password"
+                      data-val="true"
+                      data-val-equalto="Adgangskode og bekr&#xE6;ftet adgangskode stemmer ikke overens."
+                      data-val-equalto-other="Password"
+                      data-val-required="Adgangskode er p&#xE5;kr&#xE6;vet."
+                      id="ConfirmPassword"
+                      name="ConfirmPassword"
+                    />
+                    <span class="required">*</span>
+                    <span
+                      class="field-validation-valid"
+                      data-valmsg-for="ConfirmPassword"
+                      data-valmsg-replace="true"
+                    ></span>
+                  </div>
+                </div>
+                <div class="captcha-box form-group">
+                  <div>
+                    <script type="text/javascript">
+                      var onloadCallback = function () {
+                        grecaptcha.render("recaptcha", {
+                          sitekey: "6LeTJ7gUAAAAAKqAHuWAov2Dj0Ag4NjklFwd6HQq",
+                          theme: "light",
+                        });
+                      };
+                    </script>
+                    <div id="recaptcha"></div>
+                    <script
+                      async=""
+                      defer=""
+                      src="../www.google.com/recaptcha/api85f1.js?onload=onloadCallback&amp;render=explicit"
+                    ></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              id="register-button"
+              class="opretNu"
+              value="Opret nu"
+              name="register-button"
+            >
+              Opret nu
+            </button>
+
+            <input
+              name="__RequestVerificationToken"
+              type="hidden"
+              value="CfDJ8NhyWw-F1dxCvOT4X2DMgRISLLGflnW5kVz3AcMPR9zfhV_mD-b0XC-_08exr2K-hzVx2x9coZHPmJ20JnBnteCRILYrJ-msx8Q9SA97W5y56ooB1LiReF5I5cQBR7VkCmV9aY6azjMveObi3LOfqQA"
+            />
+          </form>
+        </div>
+
+        <div class="external-authentication">
+          <div class="facebook-login-block">
+            <div class="buttons">
+              <a
+                class="facebook-btn"
+                href="https://www.facebook.com/v2.6/dialog/oauth?client_id=648953841878080&amp;scope=public_profile,email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fmichaelsfirmamad.dk%2Fsignin-facebook&amp;state=CfDJ8NhyWw-F1dxCvOT4X2DMgRIEXEwuy5plO9egu8WWtQyoeYcaASYZZ0rcyRLFvQ0BtT8UrzkvGArALOs-4qHW-BoqtTMfAtyCUCWwhK26snAx1bmkLBsZqTUzh6r6PWqeBGghwmQf0CQZvV3MbeRp42YKe7l6To3TmxRXPPZnB65osVxh4R2IAO56p7SA6539oG_lWn-phGyrFF13S_9KX-I7CmMYT8FegwRaPxXudAq_A3Kb6puv9w9OEgPGNWJyBx5ft6U9F2m3iftCPVQ8zNaHAC2MWym9URP7r58kJXBi"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Michaels Mad & Vin</h4>
+            <p>
+              Jeksen Dalvej 36 - 8362 Hørning - Tlf.:
+              <a href="tel:86923847">(+45) 8692 3847</a> - Mail:
+              <a href="mailto:post@michaelsmadogvin.dk"
+                >post@michaelsmadogvin.dk</a
+              >
+              - CVR: 26640180
+            </p>
+            <ul class="kreditkort">
+              <li class="rapport">
+                <a href="https://www.findsmiley.dk/44108" target="_blank"
+                  ><img
+                    src="Themes/Bootstrap/Content/images/kontrolrapport.png"
+                /></a>
+              </li>
+              <li><img src="Themes/Bootstrap/Content/images/dk.png" /></li>
+              <li><img src="Themes/Bootstrap/Content/images/visa.png" /></li>
+              <li>
+                <img src="Themes/Bootstrap/Content/images/mastercard.png" />
+              </li>
+              <li><img src="Themes/Bootstrap/Content/images/jcb.png" /></li>
+              <li><img src="Themes/Bootstrap/Content/images/maestro.png" /></li>
+              <li><img src="Themes/Bootstrap/Content/images/edk.png" /></li>
+            </ul>
+            <div class="smallfinglinks">
+              <a href="handelsbetingelser.html">Handelsbetingelser</a>
+              <a href="index.html">Cookiepolitik</a>
+              <a target="_blank" href="https://optify.dk/">Optified</a>
+              <span class="footer-powered-by">
+                Powered by
+                <a href="https://www.nopcommerce.com/" rel="nofollow"
+                  >nopCommerce</a
+                >
+              </span>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <a
+              class="mmogvlink"
+              href="https://michaelsmadogvin.dk/"
+              target="_blank"
+            >
+              <img
+                src="Themes/Bootstrap/Content/images/logomedvin.png"
+                alt="Michaels Mad og Vin hjemmeside"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="back-to-top" title="Back to top">
+      <span class="fa fa-angle-up"></span>
+    </a>
+
+    <script
+      src="Themes/Bootstrap/Content/js/tether.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="lib/jquery.validate.min.js" type="text/javascript"></script>
+    <script
+      src="lib/jquery.validate.unobtrusive.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="lib/jquery-ui-1.10.3.custom.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="lib/jquery-migrate-1.2.1.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="Themes/Bootstrap/Content/js/public.common.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/public.ajaxcart.js" type="text/javascript"></script>
+    <script
+      src="Themes/Bootstrap/Content/js/bootstrap.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="Themes/Bootstrap/Content/js/custom.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="Themes/Bootstrap/Content/js/isotope.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="lib/magnific-popup/jquery.magnific-popup.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          )
+        ) {
+          if (($(window).width() < 1050) & ($(window).width() > 991)) {
+            console.log($(this));
+            $("a.dropdown-toggle").click(function (e) {
+              e.preventDefault();
+              $(this).unbind(e);
+            });
+          }
+        }
+      });
+
+      AjaxCart.init(
+        false,
+        ".header-links .cart-qty",
+        ".header-links .wishlist-qty",
+        ".flyout-cart"
+      );
+    </script>
+    <script type="text/javascript">
+      $(".opc li.active").prev("li").removeClass("dontGo");
+      $(".opc li.active").nextAll("li").addClass("dontGo");
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if ($("#back-to-top").length) {
+          var scrollTrigger = 100, // px
+            backToTop = function () {
+              var scrollTop = $(window).scrollTop();
+              if (scrollTop > scrollTrigger) {
+                $("#back-to-top").addClass("show");
+              } else {
+                $("#back-to-top").removeClass("show");
+              }
+            };
+          backToTop();
+          $(window).on("scroll", function () {
+            backToTop();
+          });
+          $("#back-to-top").on("click", function (e) {
+            e.preventDefault();
+            $("html,body").animate(
+              {
+                scrollTop: 0,
+              },
+              1000
+            );
+          });
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      $(".block").click(function () {
+        var getId = this.id;
+        console.log(getId);
+        $("#" + getId)
+          .find(".fa")
+          .toggleClass("rotate");
+        $("#" + getId)
+          .siblings(".block")
+          .find(".fa")
+          .removeClass("rotate");
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".block").on("click", function () {
+          var windowWidth = $(window).width();
+          if (windowWidth <= 992) {
+            var elemId = this.id;
+            $("#" + elemId).toggleClass("active");
+            $("#" + elemId)
+              .siblings(".block")
+              .removeClass("active");
+            $("#" + elemId)
+              .find(".viewBox")
+              .slideToggle();
+            $("#" + elemId)
+              .siblings(".block")
+              .find(".viewBox")
+              .slideUp();
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(".nav-item .fa").on("click", function () {
+        var x = $(this).siblings("a").attr("href");
+        $('a[href$="' + x + '"]')
+          .siblings(".first-level")
+          .toggleClass("open");
+        $('a[href$="' + x + '"]')
+          .siblings(".next-level")
+          .toggleClass("open");
+        $('a[href$="' + x + '"]')
+          .parent()
+          .siblings()
+          .children(".first-level")
+          .removeClass("open");
+        $('a[href$="' + x + '"]')
+          .siblings(".fa")
+          .toggleClass("rotate");
+        $('a[href$="' + x + '"]')
+          .parent(".nav-item")
+          .siblings()
+          .find(".fa")
+          .removeClass("rotate");
+      });
+
+      $(".general-opener").on("click", function () {
+        $("#generalDropDown").toggle();
+      });
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Khand:300,400,700|Open+Sans:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Themes/Bootstrap/Content/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="Themes/Bootstrap/Content/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Themes/Bootstrap/Content/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="Themes/Bootstrap/Content/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Themes/Bootstrap/Content/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="Themes/Bootstrap/Content/favicon/manifest.json"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/Themes/Bootstrap/Content/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"
+    />
+    <script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          palette: {},
+          theme: "classic",
+          position: "bottom-left",
+          content: {
+            message:
+              "Vi anvender cookies for at forbedre din oplevelse og give dig personligt tilpasset reklame på andre hjemmesider.",
+            dismiss: "OK",
+            link: "Læs mere",
+            href: "/cookiepolitik",
+          },
+        });
+      });
+    </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var $_Tawk_API = {},
+        $_Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/556dc4a405d4552f6b1cb856/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+
+  <!-- Mirrored from michaelsfirmamad.dk/register?returnurl=%2Fcustomer%2Finfo by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Jul 2023 07:20:56 GMT -->
+</html>
