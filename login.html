@@ -245,7 +245,7 @@
               <form
                 id="loginForm"
                 method="post"
-                action="http://127.0.0.1:5500/login.html"
+                action="https://parvez2m.github.io/madvin/login.html"
               >
                 <h1>Log på her</h1>
                 <div class="row">
@@ -703,7 +703,7 @@
 
           // Make the AJAX POST request to the API endpoint for login
 
-          fetch("http://localhost:4000/api/users/login", {
+          fetch("https://project-1-backend.onrender.com/api/users/login", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -725,7 +725,8 @@
               // Save the token in localStorage
               localStorage.setItem("token", token);
 
-              window.location.href = "http://127.0.0.1:5500/index.html";
+              window.location.href =
+                "https://parvez2m.github.io/madvin/index.html";
 
               // Optionally, redirect the user to another page or perform other actions after successful login
               // window.location.href = "dashboard.html";

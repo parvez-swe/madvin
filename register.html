@@ -244,7 +244,7 @@
           <form
             id="registrationForm"
             method="post"
-            action="http://127.0.0.1:5500/register.html"
+            action="https://parvez2m.github.io/madvin/register.html"
           >
             <div>
               <h3>Dine oplysninger</h3>
@@ -873,7 +873,7 @@
 
           // Make the AJAX POST request to the API endpoint
 
-          fetch("http://localhost:4000/api/users/register", {
+          fetch("https://project-1-backend.onrender.com/api/users/register", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -900,7 +900,8 @@
               // Save the token in localStorage
               localStorage.setItem("token", token);
 
-              window.location.href = "http://127.0.0.1:5500/index.html";
+              window.location.href =
+                "https://parvez2m.github.io/madvin/index.html";
 
               // Optionally, redirect the user to another page or perform other actions after successful registration
               // window.location.href = "success.html";
