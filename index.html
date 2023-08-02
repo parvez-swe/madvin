@@ -69,7 +69,7 @@
     <script src="./js/pmodal.js"></script>
 
     <!-- add to cart -->
-    <script src="./js/addToCart.js"></script>
+    <!-- <script src="./js/addToCart.js"></script> -->
   </head>
   <body>
     <div class="ajax-loading-block-window" style="display: none"></div>
@@ -187,12 +187,13 @@
 
           <a
             id="loginWithFacebook"
-            class="acc-tab ico-login facebook hide-xs"
+            class="acc-tab ico-login facebook hidden-xs"
             href="https://www.facebook.com/v2.6/dialog/oauth?client_id=648953841878080&amp;scope=public_profile,email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fmichaelsfirmamad.dk%2Fsignin-facebook&amp;state=CfDJ8NhyWw-F1dxCvOT4X2DMgRJrkI6zr0YoGoXpVvI0OkZwZiOBM51lO07u2wAnBbZlPf3qin0zAMXaUoQqdkmGdB3pgUw35l08vAsQsSMc9MTvz7P09Uct22xfWIFXwK2ZASjaE6JyU6TRJVQa3KdPQEUTVaULLMFYTmAtJp9aPrT0InTGsRDiSc0T_9n4y2F4xD4IvIykx0QNzavnD0QYS_gOE4JqlOjLQ1OCUw6_lEiG1YNO5wxAt7qlPLNaWaQJXg"
             ><span class="fa fa-facebook"></span
-            ><span>Login med Facebook</span></a
+            ><span>Login med Facebooks</span></a
           >
           <a
+            id="loginWithFacebook"
             class="acc-tab ico-login facebook show-xs"
             href="https://www.facebook.com/v2.6/dialog/oauth?client_id=648953841878080&amp;scope=public_profile,email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fmichaelsfirmamad.dk%2Fsignin-facebook&amp;state=CfDJ8NhyWw-F1dxCvOT4X2DMgRJrkI6zr0YoGoXpVvI0OkZwZiOBM51lO07u2wAnBbZlPf3qin0zAMXaUoQqdkmGdB3pgUw35l08vAsQsSMc9MTvz7P09Uct22xfWIFXwK2ZASjaE6JyU6TRJVQa3KdPQEUTVaULLMFYTmAtJp9aPrT0InTGsRDiSc0T_9n4y2F4xD4IvIykx0QNzavnD0QYS_gOE4JqlOjLQ1OCUw6_lEiG1YNO5wxAt7qlPLNaWaQJXg"
             ><span class="fa fa-facebook"></span
@@ -579,9 +580,18 @@
                 </div>
 
                 <button
+                  id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#175-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#175-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -801,9 +811,18 @@
                 </div>
 
                 <button
+                  id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#172-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#172-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -1022,9 +1041,19 @@
                 </div>
 
                 <button
+                  id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#174-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#174-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -1243,9 +1272,18 @@
                 </div>
 
                 <button
+                  id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#173-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#173-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -1465,9 +1503,18 @@
                 </div>
 
                 <button
+                  id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#178-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#178-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -1686,9 +1733,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#179-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                    <button
+                    id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#179-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -1907,9 +1963,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#180-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#180-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -2130,9 +2195,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#214-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#214-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -2351,9 +2425,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#123-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                       <button
+                       id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#123-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -2570,9 +2653,18 @@
                 </div>
 
                 <button
+                id="failedbtn
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#124-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                  <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#214-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -2789,9 +2881,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#133-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#133-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -3006,9 +3107,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#191-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                      <button
+                      id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#191-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -3223,9 +3333,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#189-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#189-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -3442,9 +3561,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#105-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#105-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -3663,9 +3791,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#122-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                  <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#122-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -3882,9 +4019,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#190-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#190-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -4099,9 +4245,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#134-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#134-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -4316,9 +4471,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#109-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#109-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -4533,9 +4698,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#92-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                         <button
+                         id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#92-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -4750,9 +4924,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#98-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#98-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -4969,9 +5152,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#115-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                    <button
+                    id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#115-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -5188,9 +5380,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#142-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#142-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -5407,9 +5608,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#136-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#136-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -5626,9 +5837,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#200-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                     <button
+                     id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#200-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -5843,9 +6063,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#199-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                    <button
+                    id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#199-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -6060,9 +6289,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#182-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                      <button
+                      id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#182-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -6277,9 +6515,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#185-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                      <button
+                      id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#185-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -6494,9 +6741,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#184-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                          <button
+                          id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#184-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -6711,9 +6968,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#181-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                  <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#181-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -6930,9 +7196,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#186-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#186-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -7151,9 +7427,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#183-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                    <button
+                    id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#183-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -7370,9 +7656,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#118-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                  <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#118-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -7587,9 +7883,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#101-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#101-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -7804,9 +8110,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#137-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#137-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -8025,9 +8340,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#132-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                    <button
+                    id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#132-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -8246,9 +8570,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#87-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#87-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -8467,9 +8800,20 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#86-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#86-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -8688,9 +9032,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#69-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#69-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -8909,9 +9262,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#126-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#126-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -9128,9 +9491,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#138-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#138-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -9345,9 +9718,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#94-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#94-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -9562,9 +9944,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#111-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#111-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -9779,9 +10170,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#110-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#110-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -9996,9 +10397,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#93-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                    <button
+                    id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#93-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -10215,9 +10625,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#188-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#188-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -10434,9 +10853,19 @@
                 </div>
 
                 <button
+                id="failedbtn
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#187-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#187-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -10651,9 +11080,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#107-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                  <button
+                  id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#107-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -10868,9 +11306,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#90-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#90-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -11085,9 +11532,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#119-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#119-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -11302,9 +11758,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#145-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                      <button
+                      id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#145-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -11521,9 +11986,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#102-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#102-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -11740,9 +12214,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#96-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                 <button
+                 id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#96-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -11959,9 +12442,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#113-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                        <button
+                        id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#113-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -12178,9 +12670,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#170-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#170-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -12397,9 +12898,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#171-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#171-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -12618,9 +13128,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#131-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                     <button
+                     id="failedbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#131-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -12840,9 +13359,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#130-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                   <button
+                   id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#130-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -13060,6 +13588,15 @@
                 </div>
 
                 <button
+                id="failedbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#129-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                  <button
+                  id="successbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#129-fejllogin"
@@ -13279,9 +13816,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#127-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#127-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -13496,9 +14043,19 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#128-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#128-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -13717,9 +14274,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#213-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                     <button
+                     id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#213-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -13936,9 +14502,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#139-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                                <button
+                                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#139-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -14153,9 +14728,18 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#97-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+                      <button
+                      id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#97-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -14370,9 +14954,20 @@
                 </div>
 
                 <button
+                id="failedbtn"
                   class="selectProdukt"
                   data-toggle="modal"
                   data-target="#114-fejllogin"
+                >
+                  <span>Vælg</span>
+                </button>
+
+                
+                <button
+                id="successbtn"
+                  class="selectProdukt"
+                  data-toggle="modal"
+                  data-target="#114-selectdays"
                 >
                   <span>Vælg</span>
                 </button>
@@ -25057,7 +25652,7 @@
 
     <!-- Add this script to handle the "Add to Cart" functionality -->
 
-    <!-- <script>
+    <script>
       // Get the "Læg i kurv" button by its ID
       const addToCartButton = document.getElementById("addInCart");
 
@@ -25074,26 +25669,44 @@
         // Get other data you may need to add to the cart (e.g., item ID)
         const itemId = addToCartButton.dataset.id;
 
+        // Get the value of the "valgtNavn" span
+        const itemName = document.querySelector(".valgtNavn").textContent;
+
         // Call a function to add the selected item and days to the cart
-        addToCart(itemId, selectedDayValues);
+        addToCart(itemId, selectedDayValues, itemName);
 
         // Optionally, close the modal after adding to cart
-        const modalElement = document.getElementById("177-selectdays");
+        const modalElement = document.getElementById(`${itemId}-selectdays`);
         const modalInstance = bootstrap.Modal.getInstance(modalElement);
         modalInstance.hide();
       });
 
       // Function to add the item and selected days to the cart
-      function addToCart(itemId, selectedDays) {
-        // Here, you can implement the logic to add the item and selected days to the cart.
-        // This might involve sending the data to a server-side script using AJAX, or
-        // updating a client-side shopping cart object, depending on your setup.
-        // For this example, let's just log the data to the console.
+      function addToCart(itemId, selectedDays, itemName) {
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
-        console.log("Item ID:", itemId);
-        console.log("Selected Days:", selectedDays);
-        console.log("Successfully added to cart!");
+        // Check if the item is already in the cart
+        const existingItem = cartItems.find((item) => item.itemId === itemId);
+
+        if (existingItem) {
+          // If the item is already in the cart, update the selected days for that item
+          existingItem.days = selectedDays;
+        } else {
+          // If the item is not in the cart, add the entire item with selected days
+          const cartItem = {
+            itemId: itemId,
+            name: itemName,
+            days: selectedDays,
+          };
+          cartItems.push(cartItem);
+        }
+
+        // Store the updated cart items back in local storage
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+        // Notify the user that the item has been successfully added to the cart
+        alert("Successfully added to cart!");
       }
-    </script> -->
+    </script>
   </body>
 </html>

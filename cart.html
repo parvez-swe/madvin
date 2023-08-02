@@ -60,60 +60,24 @@
 
     <script src="lib/jquery-1.10.2.min.js" type="text/javascript"></script>
 
+    ]
     <style>
-      /* body {
-        font-family: Arial, sans-serif;
+      h1 {
+        text-align: center;
+      }
+
+      .cart-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .cart-item h3 {
         margin: 0;
-        padding: 0;
-        background-color: #f8f8f8;
-      } */
-
-      .headerss {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
       }
 
-      .containers {
-        max-width: 800px;
-        margin: 0px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-
-      th,
-      td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
-
-      th {
-        background-color: #f2f2f2;
-      }
-
-      .total-row {
-        font-weight: bold;
-      }
-
-      .checkout-btn {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        background-color: #4caf50;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
+      .cart-item p {
+        margin: 5px 0;
       }
     </style>
 
@@ -223,6 +187,7 @@
             ><span>Login med Facebook</span></a
           >
           <a
+            id="loginWithFacebook"
             class="acc-tab ico-login facebook show-xs"
             href="https://www.facebook.com/v2.6/dialog/oauth?client_id=648953841878080&amp;scope=public_profile,email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fmichaelsfirmamad.dk%2Fsignin-facebook&amp;state=CfDJ8NhyWw-F1dxCvOT4X2DMgRJrkI6zr0YoGoXpVvI0OkZwZiOBM51lO07u2wAnBbZlPf3qin0zAMXaUoQqdkmGdB3pgUw35l08vAsQsSMc9MTvz7P09Uct22xfWIFXwK2ZASjaE6JyU6TRJVQa3KdPQEUTVaULLMFYTmAtJp9aPrT0InTGsRDiSc0T_9n4y2F4xD4IvIykx0QNzavnD0QYS_gOE4JqlOjLQ1OCUw6_lEiG1YNO5wxAt7qlPLNaWaQJXg"
             ><span class="fa fa-facebook"></span
@@ -273,11 +238,13 @@
         <div class="row m-0">
           <div class="col-lg-12s noPad">
             <div class="page-body">
-              <header class="headers">
-                <h1>Shopping Cart</h1>
-              </header>
+              <div id="cartItems"></div>
 
-              <div class="containers">
+              <!-- <header class="headers">
+                <h1>Shopping Cart</h1>
+              </header> -->
+
+              <!-- <div class="containers">
                 <table>
                   <tr>
                     <th>Product</th>
@@ -297,7 +264,7 @@
                     <td>1</td>
                     <td>$15.00</td>
                   </tr>
-                  <!-- Add more rows for other products -->
+                 
                   <tr class="total-row">
                     <td colspan="3">Total</td>
                     <td>$55.00</td>
@@ -305,7 +272,7 @@
                 </table>
 
                 <a href="#" class="checkout-btn">Checkout</a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -653,6 +620,10 @@
       })();
     </script>
     <!--End of Tawk.to Script-->
+
+    <!-- cart functionality  -->
+
+    <script src="./js/cart.js"></script>
   </body>
 
   <!-- Mirrored from michaelsfirmamad.dk/contactus by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Jul 2023 07:20:48 GMT -->
