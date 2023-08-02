@@ -61,6 +61,7 @@
     <script src="lib/jquery-1.10.2.min.js" type="text/javascript"></script>
 
     <!--Powered by nopCommerce - http://www.nopCommerce.com-->
+    <script src="./js/auth.js"></script>
   </head>
   <body style="">
     <div class="ajax-loading-block-window" style="display: none"></div>
@@ -153,19 +154,38 @@
         </a>
 
         <div class="goRight accountTabs">
-          <a class="acc-tab ico-register" href="register.html"
+          <a
+            id="registerButton"
+            class="acc-tab ico-register"
+            href="register.html"
             ><span class="fa fa-user-plus"></span><span>Opret bruger</span></a
           >
-          <a class="acc-tab ico-login" href="login.html"
+          <a id="loginButton" class="acc-tab ico-login" href="login.html"
             ><span class="fa fa-sign-in"></span><span>Login</span></a
           >
+
+          <!-- additional -->
+          <button
+            id="logoutButton"
+            class="acc-tab ico-login"
+            onclick="logout()"
+          >
+            <span class="fa fa-sign-out"></span><span>Logout</span>
+          </button>
+
+          <a id="cart" class="acc-tab ico-login" href="cart.html"
+            ><span class="fa fa-shopping-cart"></span><span>Cart</span></a
+          >
+
           <a
-            class="acc-tab ico-login facebook hide-xs"
+            id="loginWithFacebook"
+            class="acc-tab ico-login facebook hidden-xs"
             href="https://www.facebook.com/v2.6/dialog/oauth?client_id=648953841878080&amp;scope=public_profile,email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fmichaelsfirmamad.dk%2Fsignin-facebook&amp;state=CfDJ8NhyWw-F1dxCvOT4X2DMgRJrkI6zr0YoGoXpVvI0OkZwZiOBM51lO07u2wAnBbZlPf3qin0zAMXaUoQqdkmGdB3pgUw35l08vAsQsSMc9MTvz7P09Uct22xfWIFXwK2ZASjaE6JyU6TRJVQa3KdPQEUTVaULLMFYTmAtJp9aPrT0InTGsRDiSc0T_9n4y2F4xD4IvIykx0QNzavnD0QYS_gOE4JqlOjLQ1OCUw6_lEiG1YNO5wxAt7qlPLNaWaQJXg"
             ><span class="fa fa-facebook"></span
-            ><span>Login med Facebook</span></a
+            ><span>Login med Facebooks</span></a
           >
           <a
+            id="loginWithFacebook"
             class="acc-tab ico-login facebook show-xs"
             href="https://www.facebook.com/v2.6/dialog/oauth?client_id=648953841878080&amp;scope=public_profile,email&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fmichaelsfirmamad.dk%2Fsignin-facebook&amp;state=CfDJ8NhyWw-F1dxCvOT4X2DMgRJrkI6zr0YoGoXpVvI0OkZwZiOBM51lO07u2wAnBbZlPf3qin0zAMXaUoQqdkmGdB3pgUw35l08vAsQsSMc9MTvz7P09Uct22xfWIFXwK2ZASjaE6JyU6TRJVQa3KdPQEUTVaULLMFYTmAtJp9aPrT0InTGsRDiSc0T_9n4y2F4xD4IvIykx0QNzavnD0QYS_gOE4JqlOjLQ1OCUw6_lEiG1YNO5wxAt7qlPLNaWaQJXg"
             ><span class="fa fa-facebook"></span
